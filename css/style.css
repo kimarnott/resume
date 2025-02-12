@@ -257,7 +257,7 @@ body {
 
     .title {
         /* max-height: 30vh; */
-        flex-direction: column;
+        flex-direction: column-reverse;
         min-height: fit-content;
         max-height: 100vh;
         gap: 0;
