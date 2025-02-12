@@ -114,6 +114,11 @@ body {
     padding-bottom: 1rem;
 }
 
+.panel {
+    display: flex;
+    flex-direction: column;
+}
+
 
 .panel p {
     margin: 0.2rem 0;
@@ -255,9 +260,17 @@ body {
         flex-direction: column-reverse;
     }
 
+    .panel {
+        flex-direction: column-reverse;
+    }
+
+    .panel [id="link"] {
+        order: -1;
+    }
+
     .title {
         /* max-height: 30vh; */
-        flex-direction: column-reverse;
+        flex-direction: column;
         min-height: fit-content;
         max-height: 100vh;
         gap: 0;
