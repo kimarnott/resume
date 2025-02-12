@@ -1,59 +1,82 @@
-<h1>More about me</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<p>
-    In my spare time, I play a lot of games. Mostly videogames (rpgs, for anyone interested), 
-    but I also run a DnD campaign for myself and my university friends - which has a knack for descending into chaos, 
-    and I am a semi-competitive badminton player. 
-    Other hobbies include reading (high fantasy), skiing (when I can afford it), and playing the piano (once I get my keyboard fixed). 
-    There are a smattering of others that I can only explain by calling myself a glutton for punishment (e.g. I can touch type. I am fast. 
-    But I decided that I could be faster through the *simple* process of rewiring my brain to type a Dvorak keyboard...)
-</p>
+    <div class="title">
+        <p><img class="portrait" src="./img/profile_pic.jpg" alt="A picture of me!" height="200"></p>
+        <div class="text">
+            <h1>Kim Arnott</h1> 
+            <h2>More about me</h2>
+        </div>
+    </div>
 
-<p>
-    P.S. Don't be fooled by my tone-over-text. In real life I have a shockingly low social battery (which is not the same as 'anti-social', 
-    thank you very much) and am nowhere near as quick witted.
-</p>
 
-<hr />
 
-<h2>Personal Projects</h2>
-<h3>My DnD site</h3>
+    <div class="content">
+        <div class="panel">
+            <div>
+                <h2>Things I am learning</h2>
+                    <h3>Udemy</h3>
+                    <p>Python</p>
+                    <p class="extra">(100 days of Code: The Complete Python Pro Bootcamp)</p>
+                    <p>Web Dev (HTML, CSS, JS)</p>
+                    <p class="extra">(The Complete Full-Stack Web Development Bootcamp) - where I'm learning to do this😊</p>
+                    <h3>Frontendmasters</h3>
+                    <p>Full Stack</p>
+                    <p class="extra">(Will be starting this quite soon)</p>
+                    <h3>Continuously on the go</h3>
+                    <p>DAX Query</p>
+                    <p>PostgreSQL</p>
+            </div>
 
-<img src="./images/bestiary.png" alt="Screenshot of DnD bestiary site" height="200"> <img src="./images/characters.png" alt="Screenshot of DnD npcs site" height="200"> <img src="./images/maps.png" alt="Screeenshot of uploaded images site" height="200">
+            <hr />
+            <a href="./index.html">My CV</a>
+        </div>
 
-<p>
-    I'm quite proud of an environment I built for my DnD campaign using a low code platform. Considering I was trying to run an online homebrew campaign with word.
-    Needless to say, that's wasn't the best plan.
-</p>
-<p>
-    My site has a bestiary (with links to more information on monsters/types etc), information on my very own made-up locations, characters (players and non-players), various
-    organisations and groups in my world, maps, images, quests... etc. I also use it as a shared journal for myself and the players. There's a lot that's access controlled,
-    a lot that my players will eventually 'unlock', and a whole lot of information.
-</p>
-<p>
-    My intent with the site is to store all my data in a separate database, probably PostgreSQL, as that's what I'm most familiar with 
-    (I'm currently using the inbuilt one until I get more cloud-savvy), so I can run some 
-    more cool/complex queries. And, eventually, code up a custom website myself (using what I'm learning from various web-dev courses).
-</p>
-<p>
-    Before you ask, I don't know copyright laws. And the info I've written myself is restricted to myself (otherwise the plot would be spoilt for my players),
-     so the site is not public. But I'll happily show off my creation over a call.
+        <div class="main">
+            <p>In my spare time, I play a lot of games. Mostly videogames (rpgs, for anyone interested), 
+                but I also run a DnD campaign for myself and my university friends - which has a knack for descending into chaos, 
+                and I am a semi-competitive badminton player.</p>
+            <p>Other hobbies include reading (high fantasy), skiing (when I can afford it), and playing the piano (once I get my keyboard fixed). 
+                There are a smattering of others that I can only explain by calling myself a glutton for punishment (e.g. I can touch type. I am fast. 
+                But I decided that I could be faster through the *simple* process of rewiring my brain to type a Dvorak keyboard...)</p>
+            <p>P.S. Don't be fooled by my tone-over-text. In real life I have a shockingly low social battery (which is not the same as 'anti-social', 
+                thank you very much) and am nowhere near as quick witted.</p>
 
-<hr />
+            <div class="projects">
+                <h2>Personal Projects</h2>
+                <div class="project">
+                    <h3>My DnD site</h3>
+            
+                    <div class="images">
+                        <img src="./img/bestiary.png" alt="Screenshot of DnD bestiary site" height="200"> 
+                        <img src="./img/characters.png" alt="Screenshot of DnD npcs site" height="200"> 
+                        <img src="./img/maps.png" alt="Screeenshot of uploaded images site" height="200">
+                    </div>
+            
+                    <p>I'm quite proud of an environment I built for my DnD campaign using a low code platform. Considering I was trying to run an online homebrew campaign with word. Needless to say, that's wasn't the best plan.</p>
+                    <p>My site has a bestiary (with links to more information on monsters/types etc), information on my very own made-up locations, characters (players and non-players), various organisations and groups in my world, maps, images, quests... etc. I also use it as a shared journal for myself and the players. There's a lot that's access controlled, a lot that my players will eventually 'unlock', and a whole lot of information.</p>
+                    <p>My intent with the site is to store all my data in a separate database, probably PostgreSQL, as that's what I'm most familiar with (I'm currently using the inbuilt one until I get more cloud-savvy), so I can run some more cool/complex queries. And, eventually, code up a custom website myself (using what I'm learning from various web-dev courses).</p>
+                    <p>Before you ask, I don't know copyright laws. And the info I've written myself is restricted to myself (otherwise the plot would be spoilt for my players), so the site is not public. But I'll happily show off my creation over a call.</p>  
+                </div>
+            </div>
+        </div>
 
-<h2>Things I am learning</h2>
-<p>
-    Courses:<br />
-    <ul>
-        <li>Udemy
-            <ul>
-                <li>100 days of Code: The Complete Python Pro Bootcamp</li>
-                <li>The Complete Full-Stack Web Development Bootcamp - where I'm learning to do this :)</li>
-            </ul>
-        <li>Frontendmasters
-            <ul>
-                <li>'Beginner' Learning Path - Will be starting this quite soon</li>
-            </ul>
-    </ul>
 
-</p>
+    </div>
+
+    <footer>
+        <hr />
+        <p>Kim Arnott's Profile.</p>
+    </footer>
+</body>
+</html>

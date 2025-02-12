@@ -3,96 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <title>My Resume</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Kim Arnott</h1> 
-    
-    <p><img src="./images/profile_pic.jpg" alt="A picture of me!" height="200"> <a href="./about.html">About Me</a> | <a href="./contact.html">Contact Me</a></p>
 
-    <hr />
+    <div class="title">
+        <p><img class="portrait" src="./img/profile_pic.jpg" alt="A picture of me!" height="200"></p>
+        <div class="text">
+            <h1>Kim Arnott</h1> 
+            <h2>Junior Data Engineer</h2>
+        </div>
+    </div>
 
-    <h2>Summary</h2>
-    <p>
-        I have always found myself looking for efficiencies and optimisations in my work. Although my education was in aerospace engineering, 
-        in which I completed a master’s degree, I discovered that my inclination for automation fit the digital space like a glove. 
-        I transitioned to the data department upon completion of my graduate scheme and have not looked back. As a newly minted member of the data team, 
-        I learned how to use PostgreSQL, an activity I enjoyed so much that I decided to dedicate my free time to learning other common languages such Python, 
-        HTML, and JavaScript. I am hoping to continue developing these skills in a professional setting, using them to produce useful, user-friendly, and robust resources.
-    </p>
+    <div class="content">
+        <div class="panel">
+            <div class = "contact"> 
+                <h2>Contact</h2>
+                <p><span id="icons">
+                    <a href="www.linkedin.com/in/kim-arnott-45740615a"><img class="icon-big" src="./img/linkedin.png"></a>
+                    <a href="https://github.com/kimarnott"><img class="icon-big" src="./img/github.png"></a></span>
+                </p> 
+                <img class="icon-small" src="./img/phone.png">
+                <p>+44 (0)7592508929</p>
+                <img class="icon-small" src="./img/email.png">
+                <p>kim.arnott777@gmail.com</p>
+                <a href="https://maps.app.goo.gl/J9AkpeDofieYcGRd6"><img class="icon-small" src="./img/home.png"></a>
+                <p>Thornbury, England</p>
+            </div>
 
-    <hr />
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill-icon">
+                    <img class="icon-small" src="./img/postgres.png">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="skill-icon">
+                    <img class="icon-small" src="./img/python.png">
+                    <p>Python</p>  
+                </div>
+                <p>ETL</p>
+                <p>APIs</p>
+                <p>PowerBI</p>
+            </div>
+            
+            <div class="education">
+                <h2>Education</h2>
+                <h3 id="edu-first">MEng with Distinction</h3>
+                <p>Aerospace Engineering</p>
+                <p>University of the West of England</p>
+                <p>2022</p>
+                <h3>Dissertation Topic:</h3> 
+                <p><a href="https://bis-space.com/shop/product/jbis-075-02-0042/">"Revisiting Voyager 2's Trajectory"</a></p>
+                <p>Trajectory optimisation of the Voyager 2, MATLAB based, published in JBIS.</p>
+                <h3>Included Modules:</h3>
+                <p>Safety Critical Embedded Systems</p>
+                <p>Avionics, Systems, and Controls</p>
+                <p>Electromechanical Systems Integration</p>
+            </div>
 
-    <h2>Work Experience</h2>
-    <h3>Junior Data Engineer | Assystem</h3>
-    <h4>January 2024 - Present</h4>
-    <ul>
-        <li>Converted excel based management of nuclear waste into a web-based application using PostgreSQL and a low-code platform builder, to be demonstrated to a client.
-            Improving quality control and reducing data risks and allowing live inventory maintenance with associated calculations.</li>
-        <li>Created a non-conformance registration toolkit and process with the health, safety and environment team, and migrated data from previous data sources using Python.</li>
-        <li>Worked with systems engineers in France to research and document high temperature gas reactors and water network systems.</li>
-        <li>Worked with project managers to build out functional, system, and operational requirements for an AI document library.</li>
-    </ul>
+            <hr />
+            <a href="./about.html">About Me</a>
 
-    <h3>May 2022 to December 2023 | Systems Engineer | Assystem</h3>
-    <ul>
-        <li>Part of a team defining and governing the business transformation of engineering change management procedures with a focus on NCR management, 
-            ensuring that the UK’s largest infrastructure project is of appropriate quality, fully traceable, and maintains configuration.</li>
-        <li>Authored white papers to guide users through designed functionalities within a PLM system.</li>
-    </ul>
+        </div>
 
-    <h3>July 2019 to July 2020 | Product Engineer (Intern) | SKF Aerospace</h3>
-    <ul>
-        <li>Used excel VBA to upgrade the standards and specifications management system with an electronic directory, 
-            infrastructure for cross-referencing, and review loop procedure for specification up-issues.</li>
-        <li>Assumed leadership of the REACh project, overseen by ECHA, to redesign several manufacturing processes to 
-            eliminate hazardous chemicals from products and workplaces.</li>
-    </ul>
+    <div class="main">
+        <div class="summary">
+            <h2>Profile</h2>
+            <p>
+                I have always found myself looking for efficiencies and optimisations in my work. Although my education was in aerospace engineering, 
+                in which I completed a master’s degree, I discovered that my inclination for automation fit the digital space like a glove. 
+                I transitioned to the data department upon completion of my graduate scheme and have not looked back. As a newly minted member of the data team, 
+                I learned how to use PostgreSQL, an activity I enjoyed so much that I decided to dedicate my free time to learning other common languages such Python, 
+                HTML, and JavaScript. I am hoping to continue developing these skills in a professional setting, using them to produce useful, user-friendly, and robust resources.
+            </p>
+        </div>
+        
+        <div class="work-experience">
+            <h2>Work Experience</h2>
+            <div class="job">
+                <div class="job-head">
+                    <h3>Junior Data Engineer | Assystem</h3>
+                    <h4>January 2024 - Present</h4>
+                </div>
+                <ul>
+                    <li>Converted excel based management of nuclear waste into a web-based application using PostgreSQL and a low-code platform builder, to be demonstrated to a client.
+                        Improving quality control and reducing data risks and allowing live inventory maintenance with associated calculations.</li>
+                    <li>Created a non-conformance registration toolkit and process with the health, safety and environment team, and migrated data from previous data sources using Python.</li>
+                    <li>Worked with systems engineers in France to research and document high temperature gas reactors and water network systems.</li>
+                    <li>Worked with project managers to build out functional, system, and operational requirements for an AI document library.</li>
+                </ul>
+            </div>
 
-    <hr />
+            <div class="job">
+                <div class="job-head">
+                    <h3>Systems Engineer | Assystem</h3>
+                    <h4>May 2022 to December 2023</h4>      
+                </div>
+                <ul>
+                    <li>Part of a team defining and governing the business transformation of engineering change management procedures with a focus on NCR management, 
+                        ensuring that the UK’s largest infrastructure project is of appropriate quality, fully traceable, and maintains configuration.</li>
+                    <li>Authored white papers to guide users through designed functionalities within a PLM system.</li>
+                </ul>    
+            </div>
+        
+            <div class="job">
+                <div class="job-head">
+                    <h3>Product Engineer (Intern) | SKF Aerospace</h3>
+                    <h4>July 2019 to July 2020</h4>
+                </div>
+                <ul>
+                    <li>Used excel VBA to upgrade the standards and specifications management system with an electronic directory, 
+                        infrastructure for cross-referencing, and review loop procedure for specification up-issues.</li>
+                    <li>Assumed leadership of the REACh project, overseen by ECHA, to redesign several manufacturing processes to 
+                        eliminate hazardous chemicals from products and workplaces.</li>
+                </ul>
+            </div>
+        
+            </div>
+    </div>
 
+        <!-- <h2>Skills</h2>
+        <h3>Software Development</h3>
+        <p>As a data engineer, I have enjoyed learning and interacting with PostgreSQL and low-code/no-code websites to create data frameworks and front-end UI
+            for business-critical processes such as waste management, NCRs, and vacancy management. 
+            These all received positive praise from stakeholders and enthusiastic user uptake.</p> 
+        <p>I am undertaking online learning in my own time to improve my skills in Python, and learn other languages. Although finding the time is sometimes a challenge, 
+            I am enjoying developing my skills immensely.</p>
+        <h3>Leadership and Collaboration</h3>
+        <p>As an engineer, I often lead and join discussions with stakeholders to extract, formalise, and verify requirements. Most notably for an AI document library.
+            I provide suport and mentorship to other members of my team.
+        </p>
+        <p>As a data engineer, I have worked with product owners to prioritise work packages and word appropriate user stories.</p>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>PostgreSQL</li>
-        <li>Python</li>
-        <li>ETL</li>
-        <li>PowerBI</li>
-    </ul>
-<hr />
+        <h3>Verification and Validation</h3>
+        <p>As a data engineer, I set aside time to create unit and system tests for patch releases to ensure system integrity.</p>
+        <p>As a systems engineer, I helped develop and coordinated the user acceptance testing cycles for a new non-conformance reporting management toolkit and 
+            was heavily involved in managing the proceeding engineering outcomes.</p>
 
-    <!-- <h2>Skills</h2>
-    <h3>Software Development</h3>
-    <p>As a data engineer, I have enjoyed learning and interacting with PostgreSQL and low-code/no-code websites to create data frameworks and front-end UI
-         for business-critical processes such as waste management, NCRs, and vacancy management. 
-         These all received positive praise from stakeholders and enthusiastic user uptake.</p> 
-    <p>I am undertaking online learning in my own time to improve my skills in Python, and learn other languages. Although finding the time is sometimes a challenge, 
-        I am enjoying developing my skills immensely.</p>
-    <h3>Leadership and Collaboration</h3>
-    <p>As an engineer, I often lead and join discussions with stakeholders to extract, formalise, and verify requirements. Most notably for an AI document library.
-        I provide suport and mentorship to other members of my team.
-    </p>
-    <p>As a data engineer, I have worked with product owners to prioritise work packages and word appropriate user stories.</p>
+        <hr /> -->
 
-    <h3>Verification and Validation</h3>
-    <p>As a data engineer, I set aside time to create unit and system tests for patch releases to ensure system integrity.</p>
-    <p>As a systems engineer, I helped develop and coordinated the user acceptance testing cycles for a new non-conformance reporting management toolkit and 
-        was heavily involved in managing the proceeding engineering outcomes.</p>
-
-    <hr /> -->
-
-    <h2>Education</h2>
-    <p>2022 | MEng with Distinction - Aerospace Engineering | University of the West of England</p>
-    <p>Dissertation Topic: <a href="https://bis-space.com/shop/product/jbis-075-02-0042/">"Revisiting Voyager 2's Trajectory"</a>. Trajectory optimisation of the Voyager 2, MATLAB based, published in JBIS.</p>
-    <p>Included Modules:<br />
-    <ul>
-        <li>Safety Critical Embedded Systems</li>
-        <li>Avionics, Systems, and Controls</li>
-        <li>Electromechanical Systems Integration</li>
-    </ul>
+   </div> 
 
     <footer>
         <hr />
-        <p>Kim Arnott's Profile</p>
+        <p>Kim Arnott's Profile.</p>
     </footer>
 </body>
 

@@ -1,0 +1,274 @@
+
+/* coffee */
+:root {
+    --lightest: #E4E0E1;
+    --light: #D6C0B3;
+    --dark: #AB886D;
+    --darkest: #493628;
+}
+
+/* Nature colour scheme*/
+:root {
+    --lightest: #E9EED9;
+    --light: #CBD2A4;
+    --dark: #9A7E6F;
+    --darkest: #54473F ;
+}
+
+body {
+    font-family: Hind Siliguri, sans-serif;
+    font-weight: 200;
+    color: var(--darkest);
+}
+
+/* Header section (profile pic/name/role) */
+.title {
+    background-color: var(--darkest);
+    font-family: "Roboto Condensed", sans-serif;
+    max-height: 30vh;
+    min-height: 250px;
+
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.portrait {
+    border-radius: 50%;
+    border: 5px solid var(--lightest) ;
+    margin: 1rem 3rem;
+}
+
+.title > .text * {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.title h1 {
+    font-size: 5rem;
+    color: var(--lightest);
+}
+
+.title h2 {
+    font-family: "Knewave", serif;
+    font-weight: 100;
+    color: var(--light)
+}
+
+/*Main part of cv - bit underneath the headline */
+.content {
+    display: flex;
+}
+
+.content > * {
+    padding: 1rem;
+    text-align: justify;
+}
+
+
+/*Little panel (max-width 25%)*/
+.panel {
+    background-color: var(--light);
+    min-width: 25%;
+    text-align: center;
+}
+
+.panel > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.panel h2 {
+    margin-bottom: 1rem;
+    background-color: var(--darkest);
+    color: var(--lightest);
+    border-radius: 0.3rem;
+    width: 90%;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    padding: 0.3rem
+}
+
+.panel h3 {
+    font-family: "Knewave", serif;
+    font-weight: 100;
+    color: var(--dark);
+}
+
+.icon-small {
+    height: 1.5rem;
+}
+
+.icon-big {
+    width: 50px;
+}
+
+#icons {
+    display: flex;
+    gap: 15px;
+}
+
+.contact p {
+    padding-bottom: 1rem;
+}
+
+
+.panel p {
+    margin: 0.2rem 0;
+}
+
+.panel > .skills p {
+    font-weight: 600;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.panel .education p {
+    margin: 0;
+}
+
+.panel .education h3 {
+    margin-bottom: 0;
+}
+
+#edu-first {
+    font-size: 1.4rem
+}
+
+/*Big panel*/
+.main {
+    background-color: var(--lightest);
+}
+
+
+.main > div > h2 {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 2rem;
+}
+
+.main > div > h2::after {
+    content:"";
+    flex:1;
+    border-bottom: 1px solid var(--darkest);
+}
+
+.main > div > h2:not(:empty)::after  {
+    margin-left: 0.5rem;
+}
+
+.main .summary p {
+    padding-left: 1.5rem
+}
+
+/*Work Experience*/
+.job-head {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.work-experience > .job {
+    padding-left: 1.5rem;
+
+}
+
+.job ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.job ul > li {
+    padding-bottom: 0.5rem;
+}
+
+/*Other odds and ends*/
+
+
+/* About page */
+.content .panel > p {
+    font-weight: 600;
+}
+
+.content .panel > .extra {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+}
+
+.project {
+    padding-left: 1.5rem;
+}
+
+.project h3 {
+    color: var(--darkest);    
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: italic;
+}
+
+.projects .images {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    float: right;
+    padding-left: 20px;
+    max-width: 50%;
+}
+
+.projects .images > img {
+    border-radius: 0.3rem;
+    object-fit: cover;  
+}
+
+@media (max-width: 810px) {
+    .title h1 {
+        font-size: 4rem;
+    }
+
+    .projects .images {
+        float: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .projects .images > img {
+        object-fit: cover;
+        min-height: 100px;
+    }
+}
+
+@media (max-width: 650px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        /* max-height: 30vh; */
+        flex-direction: column;
+        min-height: fit-content;
+        max-height: 100vh;
+        gap: 0;
+        text-align: center;
+        padding: 1rem;
+    
+    }
+
+    .title .portrait {
+        margin: 0;
+    }
+
+
+}
