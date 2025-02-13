@@ -7,21 +7,12 @@
     --darkest: #493628;
 }
 
-/* Nature colour scheme*/
-:root {
-    --lightest: #E9EED9;
-    --light: #CBD2A4;
-    --dark: #9A7E6F;
-    --darkest: #54473F ;
-}
-
 body {
     font-family: Hind Siliguri, sans-serif;
     font-weight: 200;
     color: var(--darkest);
 }
 
-/* Header section (profile pic/name/role) */
 .title {
     background-color: var(--darkest);
     font-family: "Roboto Condensed", sans-serif;
@@ -55,7 +46,6 @@ body {
     color: var(--light)
 }
 
-/*Main part of cv - bit underneath the headline */
 .content {
     display: flex;
 }
@@ -65,19 +55,19 @@ body {
     text-align: justify;
 }
 
-
-/*Little panel (max-width 25%)*/
 .panel {
+    display: flex;
+    flex-direction: column;
     background-color: var(--light);
     min-width: 25%;
     text-align: center;
+    justify-content: space-between;
 }
 
 .panel > div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
 .panel h2 {
@@ -110,22 +100,23 @@ body {
     gap: 15px;
 }
 
-.contact p {
-    padding-bottom: 1rem;
+.contact > p {
+    padding-bottom: 1.2rem
 }
 
-.panel {
-    display: flex;
-    flex-direction: column;
+.contact > a {
+    font-size: 0;
 }
-
 
 .panel p {
-    margin: 0.2rem 0;
+    font-weight: 600;
+    margin: 0.3rem 0;
 }
 
-.panel > .skills p {
-    font-weight: 600;
+.panel .extra {
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: 300;
 }
 
 .skill-icon {
@@ -133,10 +124,6 @@ body {
     flex-direction: row;
     gap: 10px;
     align-items: center;
-}
-
-.panel .education p {
-    margin: 0;
 }
 
 .panel .education h3 {
@@ -147,7 +134,6 @@ body {
     font-size: 1.4rem
 }
 
-/*Big panel*/
 .main {
     background-color: var(--lightest);
 }
@@ -171,12 +157,7 @@ body {
     margin-left: 0.5rem;
 }
 
-.main .summary p {
-    padding-left: 1.5rem
-}
-
-/*Work Experience*/
-.job-head {
+.job-head, .project h3 {
     font-family: "Roboto Condensed", sans-serif;
     font-style: italic;
     display: flex;
@@ -184,59 +165,52 @@ body {
 
 }
 
-.work-experience > .job {
+.work-experience > .job, .summary > p {
     padding-left: 1.5rem;
+    padding-right: 10vw;
 
 }
 
 .job ul {
-    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.job ul > li {
+.job ul > li {    
+    list-style: none;
     padding-bottom: 0.5rem;
-}
-
-/*Other odds and ends*/
-
-
-/* About page */
-.content .panel > p {
-    font-weight: 600;
-}
-
-.content .panel > .extra {
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    padding-bottom: 1rem;
-    font-weight: 300;
 }
 
 .project {
     padding-left: 1.5rem;
 }
 
-.project h3 {
-    color: var(--darkest);    
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: italic;
-}
-
 .projects .images {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
-    float: right;
+    flex-direction: row;
     padding-left: 20px;
-    max-width: 50%;
+    gap: 5px;
 }
 
 .projects .images > img {
     border-radius: 0.3rem;
-    object-fit: cover;  
+    object-fit: cover; 
+    flex-shrink: 1;
+    flex-grow: 1; 
 }
+
+@media (max-width: 1400px) {
+    .project .images {
+        flex-direction: column;
+        float: right;
+        max-width: 60%;
+    }
+
+    .work-experience .job,  .summary > p {
+        padding-right: 0;
+    }
+}
+
 
 @media (max-width: 810px) {
     .title h1 {
@@ -269,7 +243,6 @@ body {
     }
 
     .title {
-        /* max-height: 30vh; */
         flex-direction: column;
         min-height: fit-content;
         max-height: 100vh;
@@ -283,5 +256,16 @@ body {
         margin: 0;
     }
 
+    .job-head {
+        flex-direction: column;
+    }
+
+    .job-head * {
+        margin-top: 0;
+    }
+
+    .job {
+        margin-bottom: 2.5rem;
+    }
 
 }
