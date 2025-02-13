@@ -213,34 +213,9 @@ body {
 }
 
 
-@media (max-width: 810px) {
+@media (max-width: 800px) {
     .title h1 {
         font-size: 4rem;
-    }
-
-    .projects .images {
-        float: none;
-        padding: 0;
-        max-width: 100%;
-    }
-
-    .projects .images > img {
-        object-fit: cover;
-        min-height: 100px;
-    }
-}
-
-@media (max-width: 650px) {
-    .content {
-        flex-direction: column-reverse;
-    }
-
-    .panel {
-        flex-direction: column-reverse;
-    }
-
-    .panel [id="link"] {
-        order: -1;
     }
 
     .title {
@@ -256,6 +231,33 @@ body {
     .title .portrait {
         margin: 0;
     }
+
+    .projects .images {
+        float: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    .projects .images > img {
+        object-fit: cover;
+        min-height: 100px;
+    }    
+    
+    .content {
+        flex-direction: column-reverse;
+    }
+
+    .panel {
+        flex-direction: column-reverse;
+    }
+
+    .panel [id="link"] {
+        order: -1;
+    }
+}
+
+@media (max-width: 480px) {
+
 
     .job-head {
         flex-direction: column;
