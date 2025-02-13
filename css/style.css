@@ -166,8 +166,8 @@ body {
 }
 
 .work-experience > .job, .summary > p {
-    padding-left: 1.5rem;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 
 }
 
@@ -208,6 +208,7 @@ body {
 
     .work-experience .job,  .summary > p {
         padding-right: 0;
+        padding-left: 1.5rem;
     }
 }
 
