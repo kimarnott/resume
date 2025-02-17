@@ -127,7 +127,7 @@ ul > li {
 #carouselDnDIndicators img{
     object-fit: cover;
     min-height: 300px;
-    max-height: 25vh;
+    max-height: 300px;
 }
 
 #content {
