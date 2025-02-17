@@ -126,7 +126,7 @@ ul > li {
 
 #carouselDnDIndicators img{
     object-fit: cover;
-    height: 500px;
+    height: 30vh;
 }
 
 #content {
@@ -168,10 +168,6 @@ footer p {
 
     #my-name {
         margin-top: -10px;
-    }
-
-    #portrait img {
-        height: 25vh;
     }
 }
 
