@@ -113,6 +113,9 @@ ul > li {
     max-height: 25vh;
 }
 
+#content {
+    padding-bottom: 50px;
+}
 
 footer {
     background-color: var(--darkest);
