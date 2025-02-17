@@ -8,11 +8,14 @@
     --content-typeface: "Commissioner", sans-serif;
 }
 
+html {
+    font-size: 40px;
+}
+
 body {
     color: var(--darkest);
     font-family: var(--content-typeface);
     background-color: var(--lightest);
-    font-size: 16px;
 }
 
 #content, #work-experience {
@@ -22,17 +25,18 @@ body {
 h2 {
     font-family: var(--title-typeface);
     color: var(--darkest);
-    font-size: 2rem;
-    margin-bottom: 1.5rem
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
 h4 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -56,9 +60,9 @@ ul > li {
 #portrait img {
     border-radius: 50%;
     border: 5px solid var(--lightest);
-    height: 250px;
+    height: 300px;
 }
-
+   
 #title h1, h2 {
     font-family: var(--title-typeface);
     text-transform: uppercase;
@@ -69,7 +73,7 @@ ul > li {
 }
 
 #title h1 {
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: var(--lightest);
 }
 
@@ -79,9 +83,9 @@ ul > li {
 }
 
 .nav {
-    font-size: 14px;
+    font-size: 0.9rem;
 }
-
+ 
 #panel {
     background-color: var(--dark);
     text-align: center;
@@ -103,8 +107,15 @@ ul > li {
     background-color: var(--darkest);
     border-radius: 0.75rem;
     margin-bottom: 1rem;
+    text-align: center !important;
 }
 
+.nav-item, .nav-link {
+    padding-top: 5px;
+    padding-bottom: 0;
+
+}
+    
 #panel h3 {
     margin-top: 1.5rem;
 }
@@ -132,4 +143,55 @@ footer {
 
 footer p {
     margin: 0.5rem
+}
+
+#my-name {
+    margin-top: 20px;
+}
+
+
+@media (min-width:992px) {
+    html {
+        font-size: 20px;
+    }
+
+    #title h1 {
+        font-size: 4rem;
+    }
+
+    #title h2 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #my-name {
+        margin-top: -10px;
+    }
+
+    #portrait img {
+        height: 250px;
+    }
+}
+
+@media (min-width:1200) {
+    html {
+        font-size: 18px;
+    }
+    #title h1 {
+        font-size: 5rem;
+    }
+    #portrait img {
+        height: 300px;
+    }
+
+}
+
+@media (min-width:1400px) {
+    html {
+        font-size: 18px;
+    }
+
 }
