@@ -1,136 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Resume</title>
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Knewave&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <div class="title">
-        <p><img class="portrait" src="./img/profile_pic.jpg" alt="A picture of me!" height="200"></p>
-        <div class="text">
-            <h1>Kim Arnott</h1> 
-            <h2>Junior Data Engineer</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kim's Resume</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="./css/style2.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Fredericka+the+Great&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="title">
+      <div id="portrait" class="container-xl col-lg-8 px-4 py-1">
+        <div class="row flex-md-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-md-5 col-lg-4">
+            <img
+              src="./img/profile_pic.jpg"
+              class="d-block mx-lg-auto"
+              alt="A picture of me!"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <h1 class="display-5 fw-bold lh-1 mt-3">Kim Arnott</h1>
+            <h2>Junior Data Engineer</h2>            
+            <a href="./about.html"><button type="button" class="btn btn-outline-light">About Me</button></a>
+          </div>
         </div>
-    </div>
+      </div>
+    </section>
 
-    <div class="content">
-        <div class="panel">
-            <div class = "contact"> 
-                <h2>Contact</h2>
-                <p><span id="icons">
-                    <a href="https://linkedin.com/in/kim-arnott-45740615a"><img class="icon-big" src="./img/linkedin.png"></a>
-                    <a href="https://github.com/kimarnott"><img class="icon-big" src="./img/github.png"></a></span>
-                </p> 
-                <img class="icon-small" src="./img/phone.png">
-                <p>+44 (0)7592508929</p>
-                <img class="icon-small" src="./img/email.png">
-                <p>kim.arnott777@gmail.com</p>
-                <a href="https://maps.app.goo.gl/J9AkpeDofieYcGRd6"><img class="icon-small" src="./img/home.png"></a>
-                <p>Thornbury, England</p>
-            </div>
-
-            <div class="skills">
-                <h2>Skills</h2>
-                <div class="skill-icon">
-                    <img class="icon-small" src="./img/postgres.png">
-                    <p>PostgreSQL</p>
-                </div>
-                <div class="skill-icon">
-                    <img class="icon-small" src="./img/python.png">
-                    <p>Python</p>  
-                </div>
-                <p>ETL</p>
-                <p>APIs</p>
-                <p>PowerBI</p>
-            </div>
-            
-            <div class="education">
-                <h2>Education</h2>
-                <h3 id="edu-first">MEng with Distinction</h3>
-                <p>Aerospace Engineering</p>
-                <p class="extra">University of the West of England</p>
-                <p class="extra">2022</p>
-                <h3>Dissertation Topic:</h3> 
-                <p><a href="https://bis-space.com/shop/product/jbis-075-02-0042/">"Revisiting Voyager 2's Trajectory"</a></p>
-                <p class="extra">Trajectory optimisation of the Voyager 2, MATLAB based, published in JBIS.</p>
-                <h3>Included Modules:</h3>
-                <p>Safety Critical Embedded Systems</p>
-                <p>Avionics, Systems, and Controls</p>
-                <p>Electromechanical Systems Integration</p>
-            </div>
-
-            <hr />
-            <a id="link" href="./about.html">About Me</a>
-
-        </div>
-
-    <div class="main">
-        <div class="summary">
-            <h2>Profile</h2>
-            <p>
-                I have always found myself looking for efficiencies and optimisations in my work. Although my education was in aerospace engineering, 
-                in which I completed a master’s degree, I discovered that my inclination for automation fit the digital space like a glove. 
-                I transitioned to the data department upon completion of my graduate scheme and have not looked back. As a newly minted member of the data team, 
-                I learned how to use PostgreSQL, an activity I enjoyed so much that I decided to dedicate my free time to learning other common languages such Python, 
-                HTML, and JavaScript. I am hoping to continue developing these skills in a professional setting, using them to produce useful, user-friendly, and robust resources.
+    <section id="main" class="container-xxl">
+      <div class="row">
+        <section id="panel" class="col-lg-3 order-2 pb-4 order-lg-1">
+          <div id="contact" class="order-md-3 order-lg-1 py-5 gy-4">
+            <h2>Contact</h2>
+            <p id="icon-links">
+              <a class="link-underline link-underline-opacity-0" href="https://linkedin.com/in/kim-arnott-45740615a">
+                <img class="icon-big" src="./img/linkedin.png" />
+              </a>
+              <a padx="10px" href="https://github.com/kimarnott">
+                <img class="icon-big" src="./img/github.png" />
+              </a>
             </p>
-        </div>
-        
-        <div class="work-experience">
-            <h2>Work Experience</h2>
-            <div class="job">
-                <div class="job-head">
-                    <h3>Junior Data Engineer | Assystem</h3>
-                    <h4>January 2024 - Present</h4>
-                </div>
-                <ul>
-                    <li>Converted excel based management of nuclear waste into a web-based application using PostgreSQL and a low-code platform builder, to be demonstrated to a client.
-                        Improving quality control and reducing data risks and allowing live inventory maintenance with associated calculations.</li>
-                    <li>Created a non-conformance registration toolkit and process with the health, safety and environment team, and migrated data from previous data sources using Python.</li>
-                    <li>Worked with systems engineers in France to research and document high temperature gas reactors and water network systems.</li>
-                    <li>Worked with project managers to build out functional, system, and operational requirements for an AI document library.</li>
-                </ul>
-            </div>
+            <img class="icon-small" src="./img/phone.png" />
+            <p>+44 (0)7592508929</p>
+            <img class="icon-small" src="./img/email.png" />
+            <p>kim.arnott777@gmail.com</p>
+            <a href="https://maps.app.goo.gl/J9AkpeDofieYcGRd6"
+              ><img class="icon-small" src="./img/home.png"
+            /></a>
+            <p>Thornbury, England</p>
+          </div>
 
-            <div class="job">
-                <div class="job-head">
-                    <h3>Systems Engineer | Assystem</h3>
-                    <h4>May 2022 to December 2023</h4>      
-                </div>
-                <ul>
-                    <li>Part of a team defining and governing the business transformation of engineering change management procedures with a focus on NCR management, 
-                        ensuring that the UK’s largest infrastructure project is of appropriate quality, fully traceable, and maintains configuration.</li>
-                    <li>Authored white papers to guide users through designed functionalities within a PLM system.</li>
-                </ul>    
+          <div id="skills" class="order-md-2 order-lg-2 gy-4">
+            <h2>Skills</h2>
+            <div class="skill-icon">
+              <p>
+                <img class="icon-small" src="./img/postgres.png" /> PostgreSQL
+              </p>
             </div>
-        
-            <div class="job">
-                <div class="job-head">
-                    <h3>Product Engineer (Intern) | SKF Aerospace</h3>
-                    <h4>July 2019 to July 2020</h4>
+            <div class="skill-icon">
+              <p><img class="icon-small" src="./img/python.png" /> Python</p>
+            </div>
+            <p>ETL</p>
+            <p>APIs</p>
+            <p>PowerBI</p>
+          </div>
+
+          <div id="education" class="order-md-1 order-lg-3 gy-4">
+            <h2>Education</h2>
+            <h3>MEng with Distinction</h3>
+            <p>Aerospace Engineering</p>
+            <p>University of the West of England</p>
+            <p>2022</p>
+            <h3>Dissertation Topic:</h3>
+            <p>
+              <a 
+                class="link-underline-light link-offset-2-hover link-underline-opacity-50 link-underline-opacity-75-hover"
+                href="https://bis-space.com/shop/product/jbis-075-02-0042/"
+                >"Revisiting Voyager 2's Trajectory"</a
+              >
+            </p>
+            <p>
+              Trajectory optimisation of the Voyager 2. MATLAB based, published
+              in JBIS.
+            </p>
+            <h3>Included Modules:</h3>
+            <p>Safety Critical Embedded Systems</p>
+            <p>Avionics, Systems, and Controls</p>
+            <p>Electromechanical Systems Integration</p>
+          </div>
+        </section>
+
+        <section
+          id="content"
+          class="col-lg-9 order-lg-2 justify-content-center"
+        >
+          <section id="summary" class="col-lg-12 py-5">
+            <h2 class="col-12" style="font-weight: 600">
+              Profile
+              <hr />
+            </h2>
+            <p>
+              I have always found myself looking for efficiencies and
+              optimisations in my work. Although my education was in aerospace
+              engineering, in which I completed a master’s degree, I discovered
+              that my inclination for automation fit the digital space like a
+              glove. I transitioned to the data department upon completion of my
+              graduate scheme and have not looked back.
+            </p>
+            <p>
+              As a newly minted member of the data team, I learned how to use
+              PostgreSQL, an activity I enjoyed so much that I decided to
+              dedicate my free time to learning other common languages such
+              Python, HTML, and JavaScript. I am hoping to continue developing
+              these skills in a professional setting, using them to produce
+              useful, user-friendly, and robust resources.
+            </p>
+          </section>
+
+          <section id="work-experience" class="col-xl-12">
+            <h2 class="col-12" style="font-weight: 600">Work Experience<hr /></h2>
+            <div class="row gx-5 gy-3">
+              <div class="job col-xxl-6">
+                <div class="row job-head">
+                  <h3 class="col-12">Junior Data Engineer</h3>
+                  <h4 class="col-6">Assystem</h4>
+                  <h4 style="text-align: right" class="job-date col-6">
+                    Jan 2024 - Present
+                  </h4>
                 </div>
                 <ul>
-                    <li>Used excel VBA to upgrade the standards and specifications management system with an electronic directory, 
-                        infrastructure for cross-referencing, and review loop procedure for specification up-issues.</li>
-                    <li>Assumed leadership of the REACh project, overseen by ECHA, to redesign several manufacturing processes to 
-                        eliminate hazardous chemicals from products and workplaces.</li>
+                  <li>
+                    Used PostgreSQL and a low-code platform builder to convert
+                    an excel-based nuclear waste management process to a
+                    web-based application. The system automates calculations and
+                    inventory management, improving quality control and reducing
+                    data risks.
+                  </li>
+                  <li>
+                    Used Python to migrate spreadsheet data to postgreSQL
+                    databases.
+                  </li>
+                  <li>
+                    Created Apache Superset and PowerBI dashboards for the
+                    resource management team, automating the process of
+                    manipulating raw data into insightful overviews.
+                  </li>
                 </ul>
+              </div>
+
+              <div class="job col-xxl-6">
+                <div class="row job-head">
+                  <h3 class="col-12">Systems Engineer</h3>
+                  <h4 class="col-6">Assystem</h4>
+                  <h4 style="text-align: right" class="job-date col-6">
+                    May 2022 to Dec 2023
+                  </h4>
+                </div>
+                <ul>
+                  <li>
+                    Part of a team defining and governing the business
+                    transformation of engineering change management procedures
+                    with a focus on NCR management, ensuring that the UK’s
+                    largest infrastructure project is of appropriate quality,
+                    fully traceable, and maintains configuration.
+                  </li>
+                  <li>
+                    Planned and oversaw user testing rounds of a new PLM system,
+                    tranforming user feedback into formal requriements.
+                  </li>
+                  <li>
+                    Authored white papers to guide users through designed
+                    functionalities within a PLM system.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="job col-xxl-6">
+                <div class="row job-head">
+                  <h3 class="col-12">Product Engineer</h3>
+                  <h4 class="col-6">SKF Aerospace (Intern)</h4>
+                  <h4 style="text-align: right" class="job-date col-6">
+                    Jul 2019 to Jul 2020
+                  </h4>
+                </div>
+                <ul>
+                  <li>
+                    Used excel VBA to upgrade the standards and specifications
+                    management system with an electronic directory,
+                    infrastructure for cross-referencing, and review loop
+                    procedure for specification up-issues.
+                  </li>
+                  <li>
+                    Assumed leadership of the REACh project, overseen by ECHA,
+                    to redesign several manufacturing processes to eliminate
+                    hazardous chemicals from products and workplaces.
+                  </li>
+                </ul>
+              </div>
             </div>
-        
-            </div>
-    </div>
-   </div> 
+          </section>
+        </section>
+      </div>
+    </section>
 
     <footer>
-        <hr />
-        <p>Kim Arnott's Profile.</p>
-    </footer>
-</body>
-
+      <p>Kim Arnott's Profile</p>
+      <p>Updated 2025</p>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  </body>
 </html>

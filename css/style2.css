@@ -1,0 +1,123 @@
+/* Hmm */
+:root {
+    --lightest: #E4E0E1;
+    --light: #D6C0B3;
+    --dark: #AB886D;
+    --darkest: #493628;
+    --title-typeface: "Fredericka the Great", serif;
+    --content-typeface: "Commissioner", sans-serif;
+}
+
+body {
+    color: var(--darkest);
+    font-family: var(--content-typeface);
+    background-color: var(--lightest);
+    font-size: 16px;
+}
+
+h2 {
+    font-family: var(--title-typeface);
+    color: var(--darkest);
+    font-size: 2rem;
+    margin-bottom: 1.5rem
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul > li {
+    padding-bottom: .5rem
+}
+
+#education a {
+    color: var(--lightest);
+}
+
+
+#title {
+    background-color: var(--darkest);
+}
+
+#portrait img {
+    border-radius: 50%;
+    border: 5px solid var(--lightest);
+    height: 250px;
+}
+
+#title h1, h2 {
+    font-family: var(--title-typeface);
+    text-transform: uppercase;
+}
+
+.btn {
+    font-family: var(--content-typeface);
+}
+
+#title h1 {
+    font-size: 4.5rem;
+    color: var(--lightest);
+}
+
+#title h2 {
+    font-weight: 100;
+    color: var(--light);
+}
+
+#panel {
+    background-color: var(--dark);
+    text-align: center;
+    justify-content: space-between;
+}
+
+.icon-big {
+    width: 3rem;
+    margin: 0 0.3rem;
+}
+
+.icon-small {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+
+#panel h2 {
+    color: var(--lightest);
+    background-color: var(--darkest);
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+#panel h3 {
+    margin-top: 1.5rem;
+}
+
+#education p {
+    margin: 2px;
+}
+
+#carouselDnDIndicators img{
+    object-fit: cover;
+    min-height: 200px;
+    max-height: 25vh;
+}
+
+
+footer {
+    background-color: var(--darkest);
+    color: var(--lightest);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+}
