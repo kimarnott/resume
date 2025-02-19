@@ -1,0 +1,211 @@
+/* Hmm */
+:root {
+  --lightest: #e4e0e1;
+  --light: #d6c0b3;
+  --dark: #ab886d;
+  --darkest: #493628;
+  --title-typeface: "Fredericka the Great", serif;
+  --content-typeface: "Commissioner", sans-serif;
+}
+
+html {
+  font-size: 40px;
+}
+
+body {
+  color: var(--darkest);
+  font-family: var(--content-typeface);
+  background-color: var(--lightest);
+}
+
+#content,
+#work-experience {
+  text-align: justify;
+}
+
+h2 {
+  font-family: var(--title-typeface);
+  color: var(--darkest);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li {
+  padding-bottom: 0.5rem;
+}
+
+#education a {
+  color: var(--lightest);
+}
+
+#title {
+  background-color: var(--darkest);
+}
+
+#portrait img {
+  border-radius: 50%;
+  border: 5px solid var(--lightest);
+  height: 300px;
+}
+
+#title h1,
+h2 {
+  font-family: var(--title-typeface);
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: var(--content-typeface);
+}
+
+#title h1 {
+  font-size: 3rem;
+  color: var(--lightest);
+}
+
+#title h2 {
+  font-weight: 100;
+  color: var(--light);
+}
+
+.nav {
+  font-size: 0.9rem;
+}
+
+.nav-item,
+.nav-link {
+  padding-top: 10px;
+  padding-bottom: 0;
+  color: var(--lightest);
+}
+
+#title a {
+  padding-bottom: 10px;
+}
+
+#panel {
+  background-color: var(--dark);
+  text-align: center;
+  justify-content: space-between;
+}
+
+#panel h3 {
+  margin-top: 1.5rem;
+}
+
+#panel p {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+#contact p {
+  margin-bottom: 1.5rem;
+}
+
+.icon-big {
+  width: 3rem;
+  margin: 0 0.3rem;
+}
+
+.icon-small {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#panel h2 {
+  color: var(--lightest);
+  background-color: var(--darkest);
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  text-align: center !important;
+}
+
+#carouselDnDIndicators img {
+  object-fit: cover;
+  height: 30vh;
+}
+
+#content {
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: var(--darkest);
+  color: var(--lightest);
+  padding-top: 5px;
+}
+
+footer a {
+  color: var(--lightest);
+}
+
+.italic {
+  font-style: italic;
+  font-weight: 300;
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+  #education h2 {
+    font-size: 1.8rem;
+  }
+
+  #email-text {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+
+  #title h1 {
+    font-size: 4rem;
+  }
+
+  #title h2 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #portrait img {
+    height: 250px;
+  }
+}
+
+@media (min-width: 1200) {
+  html {
+    font-size: 18px;
+  }
+  #title h1 {
+    font-size: 5rem;
+  }
+  #portrait img {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+}
