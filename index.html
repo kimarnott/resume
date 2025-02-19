@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Fredericka+the+Great&display=swap" 
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Fredericka+the+Great&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -35,16 +35,26 @@
           </div>
           <ul class="nav nav-tabs mt-0">
             <li class="nav-item">
-              <a class="nav-link active" style="background-color:#D6C0B3" aria-current="page" href="./index.html">CV</a>
+              <a
+                class="nav-link active"
+                style="background-color: var(--light); color: var(--darkest)"
+                aria-current="page"
+                href="./index.html"
+                >CV</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" style="color:#E4E0E1 " href="./about.html">About Me</a>
+              <a
+                class="nav-link"
+                style="color: var(--light)"
+                href="./about.html"
+                >About Me</a
+              >
             </li>
           </ul>
         </div>
       </div>
-
-     </section>
+    </section>
 
     <section id="main" class="container-xxl">
       <div class="row">
@@ -52,7 +62,10 @@
           <div id="contact" class="order-md-3 order-lg-1 py-5 gy-4">
             <h2>Contact</h2>
             <p id="icon-links">
-              <a class="link-underline link-underline-opacity-0" href="https://linkedin.com/in/kim-arnott-45740615a">
+              <a
+                class="link-underline link-underline-opacity-0"
+                href="https://linkedin.com/in/kim-arnott-45740615a"
+              >
                 <img class="icon-big" src="./img/linkedin.png" />
               </a>
               <a padx="10px" href="https://github.com/kimarnott">
@@ -62,7 +75,7 @@
             <img class="icon-small" src="./img/phone.png" />
             <p>+44 (0)7592508929</p>
             <img class="icon-small" src="./img/email.png" />
-            <p>kim.arnott777@gmail.com</p>
+            <p id="email-text">kim.arnott777@gmail.com</p>
             <a href="https://maps.app.goo.gl/J9AkpeDofieYcGRd6"
               ><img class="icon-small" src="./img/home.png"
             /></a>
@@ -71,17 +84,32 @@
 
           <div id="skills" class="order-md-2 order-lg-2 gy-4">
             <h2>Skills</h2>
+            <h3>Programming & Languages</h3>
+            <div class="skill-icon">
+              <p>
+                <img class="icon-small" src="./img/python.png" /> Python -<span
+                  class="italic"
+                >
+                  ETL, Data processing</span
+                >
+              </p>
+            </div>
+            <p>SQL</p>
+            <p>JavaScript -<span class="italic"> Basic Scripting</span></p>
+            <p>Excel VBA</p>
+            <p>HTML/CSS</p>
+            <h3>Tools & Technologies</h3>
             <div class="skill-icon">
               <p>
                 <img class="icon-small" src="./img/postgres.png" /> PostgreSQL
               </p>
             </div>
-            <div class="skill-icon">
-              <p><img class="icon-small" src="./img/python.png" /> Python</p>
-            </div>
-            <p>ETL</p>
-            <p>APIs</p>
+            <p>Budibase -<span class="italic"> Low-code web apps</span></p>
+            <p>
+              Apache Superset -<span class="italic"> Data visualisation</span>
+            </p>
             <p>PowerBI</p>
+            <p>GitHub</p>
           </div>
 
           <div id="education" class="order-md-1 order-lg-3 gy-4">
@@ -92,20 +120,17 @@
             <p>2022</p>
             <h3>Dissertation Topic:</h3>
             <p>
-              <a 
+              <a
                 class="link-underline-light link-offset-2-hover link-underline-opacity-50 link-underline-opacity-75-hover"
                 href="https://bis-space.com/shop/product/jbis-075-02-0042/"
                 >"Revisiting Voyager 2's Trajectory"</a
               >
             </p>
             <p>
-              Trajectory optimisation of the Voyager 2. MATLAB based, published
-              in JBIS.
+              Trajectory optimisation of the Voyager 2 mission using MATLAB.
+              Published in the Journal of the British Interplanetary Society
+              (JBIS)
             </p>
-            <h3>Included Modules:</h3>
-            <p>Safety Critical Embedded Systems</p>
-            <p>Avionics, Systems, and Controls</p>
-            <p>Electromechanical Systems Integration</p>
           </div>
         </section>
 
@@ -119,25 +144,22 @@
               <hr />
             </h2>
             <p>
-              I have always found myself looking for efficiencies and
-              optimisations in my work. Although my education was in aerospace
-              engineering, in which I completed a master’s degree, I discovered
-              that my inclination for automation fit the digital space like a
-              glove. I transitioned to the data department upon completion of my
-              graduate scheme and have not looked back.
-            </p>
-            <p>
-              As a newly minted member of the data team, I learned how to use
-              PostgreSQL, an activity I enjoyed so much that I decided to
-              dedicate my free time to learning other common languages such
-              Python, HTML, and JavaScript. I am hoping to continue developing
-              these skills in a professional setting, using them to produce
-              useful, user-friendly, and robust resources.
+              Self-driven and resourceful Data Engineer with over a year of
+              experience building internal tools using PostgreSQL, Python, and
+              Budibase. After transitioning from Aerospace and Systems
+              Engineering, I developed web applications for managing various
+              processes. Experienced in migrating data through Python-based ETL
+              workflows and collaborating with stakeholders to deliver tailored
+              solutions. Eager to apply my technical skills to impactful,
+              data-driven projects.
             </p>
           </section>
 
           <section id="work-experience" class="col-xl-12">
-            <h2 class="col-12" style="font-weight: 600">Work Experience<hr /></h2>
+            <h2 class="col-12" style="font-weight: 600">
+              Work Experience
+              <hr />
+            </h2>
             <div class="row">
               <div class="job col-xxl-6">
                 <div class="row job-head">
@@ -149,20 +171,31 @@
                 </div>
                 <ul>
                   <li>
-                    Used PostgreSQL and a low-code platform builder to convert
-                    an excel-based nuclear waste management process to a
-                    web-based application. The system automates calculations and
-                    inventory management, improving quality control and reducing
-                    data risks.
+                    Led the migration of a spreadsheet-based nuclear waste
+                    management process to a web-based application, utilizing
+                    PostgreSQL and web development tools to automate
+                    calculations and inventory managem
                   </li>
                   <li>
-                    Used Python to migrate spreadsheet data to postgreSQL
-                    databases.
+                    Developed Python-based ETL workflows to seamlessly migrate
+                    historical data from spreadsheets to PostgreSQL, ensuring
+                    accurate data integration and consistency.
                   </li>
                   <li>
-                    Created Apache Superset and PowerBI dashboards for the
-                    resource management team, automating the process of
-                    manipulating raw data into insightful overviews.
+                    Developed dynamic dashboards in Apache Superset and PowerBI,
+                    automating data processing to deliver actionable insights
+                    that empowered the resourc
+                  </li>
+                  <li>
+                    Collaborated with stakeholders to gather requirements,
+                    delivering tailored solutions that streamlined operations
+                    and improved workflow efficiency.
+                  </li>
+                  <li>
+                    Gained hands-on proficiency in PostgreSQL, Python, web
+                    development, Apache Superset, and PowerBI, applying these
+                    skills to deliver impactful solutions and drive project
+                    success.
                   </li>
                 </ul>
               </div>
@@ -177,19 +210,19 @@
                 </div>
                 <ul>
                   <li>
-                    Part of a team defining and governing the business
-                    transformation of engineering change management procedures
-                    with a focus on NCR management, ensuring that the UK’s
-                    largest infrastructure project is of appropriate quality,
-                    fully traceable, and maintains configuration.
+                    Led user testing for the implementation of a new PLM system,
+                    gathering and analysing feedback to translate into formal
+                    requirements, enhancing system design, functionality, and
+                    user experience.
                   </li>
                   <li>
-                    Planned and oversaw user testing rounds of a new PLM system,
-                    tranforming user feedback into formal requriements.
+                    Collaborated with cross-functional teams to align system
+                    updates with business objectives and technical
+                    specifications, enhancing usability and performance.
                   </li>
                   <li>
-                    Authored white papers to guide users through designed
-                    functionalities within a PLM system.
+                    Produced detailed white papers and user guides to ensure
+                    clear communication and facilitate effective user adoption.
                   </li>
                 </ul>
               </div>
@@ -204,15 +237,16 @@
                 </div>
                 <ul>
                   <li>
-                    Used excel VBA to upgrade the standards and specifications
-                    management system with an electronic directory,
-                    infrastructure for cross-referencing, and review loop
-                    procedure for specification up-issues.
+                    Contributed to the redesign and testing of new manufacturing
+                    processes for aerospace components, including analysing test
+                    results of new material coatings to eliminate hazardous
+                    chemicals and ensure compliance with ECHA regulations.
                   </li>
                   <li>
-                    Assumed leadership of the REACh project, overseen by ECHA,
-                    to redesign several manufacturing processes to eliminate
-                    hazardous chemicals from products and workplaces.
+                    Enhanced the standards and specifications management system
+                    using Excel VBA, developing an electronic directory, and
+                    cross referencing infrastructure to optimise the review
+                    process and improve overall system efficiency.
                   </li>
                 </ul>
               </div>
@@ -222,11 +256,26 @@
       </div>
     </section>
 
-    <footer>
-      <p>Kim Arnott's Profile</p>
-      <p>Updated 2025</p>
-    </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+    <footer class="container-fluid">
+      <div class="container">
+        <ul
+          class="nav d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <li>© 2025 Kim Arnott</li>
+          <li>
+            <a class="px-2" href="https://kimarnott.github.io/personal-website/"
+              >My Website</a
+            >
+          </li>
+          <li>Updated 2025</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

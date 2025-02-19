@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <title>About Kim</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
     <link href="./css/style2.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Fredericka+the+Great&display=swap"
@@ -35,10 +35,21 @@
           </div>
           <ul class="nav nav-tabs mt-0">
             <li class="nav-item">
-              <a class="nav-link" style="color:#E4E0E1 " href="./index.html">CV</a>
+              <a
+                class="nav-link"
+                style="color: var(--light)"
+                href="./index.html"
+                >CV</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" style="background-color:#D6C0B3" aria-current="page" href="./about.html">About Me</a>
+              <a
+                class="nav-link active"
+                style="background-color: var(--light); color: var(--darkest)"
+                aria-current="page"
+                href="./about.html"
+                >About Me</a
+              >
             </li>
           </ul>
         </div>
@@ -49,7 +60,7 @@
       <div class="row">
         <section
           id="panel"
-          class="col-lg-3 order-2 order-lg-1 pb-4  align-items-center"
+          class="col-lg-3 order-2 order-lg-1 pb-4 align-items-center"
         >
           <div id="contact" class="order-md-3 order-lg-1 py-5 gy-4">
             <h2>Contact</h2>
@@ -77,10 +88,8 @@
           <div id="education" class="order-md-1 order-lg-3 gy-4">
             <h2>Things I am learning</h2>
             <h3>Udemy</h3>
-            <p>100 days of Code: The Complete Python Pro Bootcamp
-            </p>
-            <p>The Complete Full-Stack Web Development Bootcamp
-            </p>
+            <p>100 days of Code: The Complete Python Pro Bootcamp</p>
+            <p>The Complete Full-Stack Web Development Bootcamp</p>
             <h3>Frontendmasters</h3>
             <p>Full Stack</p>
             <h3>Continuously on the go</h3>
@@ -95,7 +104,9 @@
         >
           <section id="summary" class="col-lg-12 py-5">
             <h2 class="col-12" style="font-weight: 600">
-              Hobbies and interests<hr/></h2>
+              Hobbies and interests
+              <hr />
+            </h2>
             <p>
               In my spare time, I play a lot of games. Mostly videogames (rpgs,
               for anyone interested), but I also run a DnD campaign for myself
@@ -118,124 +129,139 @@
 
           <section id="work-experience" class="col-xl-12">
             <h2 class="col-12" style="font-weight: 600">
-              Personal Projects<hr/>
+              Personal Projects
+              <hr />
             </h2>
-                <div class="row">
-                  <h3 class="col-12">My DnD site</h3>
+            <div class="row">
+              <h3 class="col-12">My DnD site</h3>
+            </div>
+
+            <p>
+              I'm quite proud of an environment I built for my DnD campaign
+              using a low code platform. Considering I was trying to run an
+              online homebrew campaign with word. Needless to say, that's wasn't
+              the best plan.
+            </p>
+
+            <div id="carouselDnDIndicators" class="carousel slide mx-5 my-3">
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselDnDIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselDnDIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselDnDIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/bestiary.png"
+                    alt="Screenshot of DnD bestiary site"
+                    class="d-block w-100"
+                  />
                 </div>
-
-                <p>
-                    I'm quite proud of an environment I built for my DnD campaign
-                    using a low code platform. Considering I was trying to run an
-                    online homebrew campaign with word. Needless to say, that's
-                    wasn't the best plan.
-                  </p>
-
-                <div id="carouselDnDIndicators" class="carousel slide mx-5 my-3">
-                  <div class="carousel-indicators">
-                    <button
-                      type="button"
-                      data-bs-target="#carouselDnDIndicators"
-                      data-bs-slide-to="0"
-                      class="active"
-                      aria-current="true"
-                      aria-label="Slide 1"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselDnDIndicators"
-                      data-bs-slide-to="1"
-                      aria-label="Slide 2"
-                    ></button>
-                    <button
-                      type="button"
-                      data-bs-target="#carouselDnDIndicators"
-                      data-bs-slide-to="2"
-                      aria-label="Slide 3"
-                    ></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img
-                        src="./img/bestiary.png"
-                        alt="Screenshot of DnD bestiary site"
-                        class="d-block w-100"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./img/characters.png"
-                        alt="Screenshot of DnD npcs site"
-                        class="d-block w-100"
-                      />
-                    </div>
-                    <div class="carousel-item">
-                      <img
-                        src="./img/maps.png"
-                        alt="Screeenshot of uploaded images site"
-                        class="d-block w-100"
-                      />
-                    </div>
-                  </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselDnDIndicators"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselDnDIndicators"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
+                <div class="carousel-item">
+                  <img
+                    src="./img/characters.png"
+                    alt="Screenshot of DnD npcs site"
+                    class="d-block w-100"
+                  />
                 </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/maps.png"
+                    alt="Screeenshot of uploaded images site"
+                    class="d-block w-100"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselDnDIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselDnDIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
 
-                <p>
-                  My site has a bestiary (with links to more information on
-                  monsters/types etc), information on my very own made-up
-                  locations, characters (players and non-players), various
-                  organisations and groups in my world, maps, images, quests...
-                  etc. I also use it as a shared journal for myself and the
-                  players. There's a lot that's access controlled, a lot that my
-                  players will eventually 'unlock', and a whole lot of
-                  information.
-                </p>
-                <p>
-                  My intent with the site is to store all my data in a separate
-                  database, probably PostgreSQL, as that's what I'm most
-                  familiar with (I'm currently using the inbuilt one until I get
-                  more cloud-savvy), so I can run some more cool/complex
-                  queries. And, eventually, code up a custom website myself
-                  (using what I'm learning from various web-dev courses).
-                </p>
-                <p>
-                  Before you ask, I don't know copyright laws. And the info I've
-                  written myself is restricted to myself (otherwise the plot
-                  would be spoilt for my players), so the site is not public.
-                  But I'll happily show off my creation over a call.
-                </p>
+            <p>
+              My site has a bestiary (with links to more information on
+              monsters/types etc), information on my very own made-up locations,
+              characters (players and non-players), various organisations and
+              groups in my world, maps, images, quests... etc. I also use it as
+              a shared journal for myself and the players. There's a lot that's
+              access controlled, a lot that my players will eventually 'unlock',
+              and a whole lot of information.
+            </p>
+            <p>
+              My intent with the site is to store all my data in a separate
+              database, probably PostgreSQL, as that's what I'm most familiar
+              with (I'm currently using the inbuilt one until I get more
+              cloud-savvy), so I can run some more cool/complex queries. And,
+              eventually, code up a custom website myself (using what I'm
+              learning from various web-dev courses).
+            </p>
+            <p>
+              Before you ask, I don't know copyright laws. And the info I've
+              written myself is restricted to myself (otherwise the plot would
+              be spoilt for my players), so the site is not public. But I'll
+              happily show off my creation over a call.
+            </p>
+          </section>
         </section>
       </div>
     </section>
 
-    <footer>
-      <p>Kim Arnott's Profile</p>
-      <p>Updated 2025</p>
-    </footer> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  
+    <footer class="container-fluid">
+      <div class="container">
+        <ul
+          class="nav d-flex flex-wrap align-items-center justify-content-between"
+        >
+          <li>© 2025 Kim Arnott</li>
+          <li>
+            <a class="px-2" href="https://kimarnott.github.io/personal-website/"
+              >My Website</a
+            >
+          </li>
+          <li>Updated 2025</li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
